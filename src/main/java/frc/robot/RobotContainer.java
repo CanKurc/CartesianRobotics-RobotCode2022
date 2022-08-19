@@ -69,10 +69,10 @@ public class RobotContainer {
           //UNCOMMENT IF TANK DRIVE XBOX CONTROLLER
           //() -> drivetrain.tankdrive(m_rightJo  ystick.getRawAxis(1)/1.2, m_rightJoystick.getRawAxis(3)/1.2),drivetrain));
 
-          //UNCOMMENT IF IT IS TANK DRIVE DOUBLE JOYSTICK.
+          //UNCOMMENT IF TANK DRIVE DOUBLE JOYSTICK
           //() -> drivetrain.tankdrive(m_leftJoystick.getY()/1.3, -m_rightJoystick.getY()/1.3),drivetrain));
 
-          //UNCOMMENT IF IT IS ARCADE DRIVE.
+          //UNCOMMENT IF ARCADE DRIVE
           //() -> drivetrain.arcadeDrive(m_rightJoystick.getY()/DriveConstants.motorSpeedConstant, -m_rightJoystick.getX()/DriveConstants.motorSpeedConstant), drivetrain));
   
   }
@@ -132,12 +132,9 @@ public class RobotContainer {
   }
 
    public void changeDriveState(){
-    if (driveState){
-      driveState = false;
-    }else{
-      driveState = true;
-    }
+    driveState != driveState;
   }
+  
     public double getDriveSpeed(){
       double joyValue = 1 + m_leftJoystick.getRawAxis(3);
       if (joyValue <= 1){
